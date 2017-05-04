@@ -1,35 +1,35 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <title>BaaS-JSSDK</title>
-    <meta charset="utf8">
-    <meta http-equiv="X-UA-Compatible" content="chrome=1" />
-    <meta name="renderer" content="webkit" />
-    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no, maximum-scale=1.0, minimum-scale=1.0" />
-    <link rel="shortcut icon" href="/favicon.png">
-    <script>
-      if (!window.Promise) document.write('<script src="//github.elemecdn.com/jakearchibald/es6-promise/v3.0.2/dist/es6-promise.min.js"><\/script>');
-      if (!window.fetch) document.write('<script src="//github.elemecdn.com/uglifyjs!github/fetch/v0.11.0/fetch.js"><\/script>');
-    </script>
-    <script src="//github.elemecdn.com/YanagiEiichi/reciper/gh-pages/index.js"></script>
-    <script>
-      addEventListener('DOMContentLoaded', () => {
-        reciper({
-          name: 'BaaS-JSSDK',
-          home: '/',
-          description: 'NO-BACKEND Storage Service',
-          darkColor: '#EA212E',
-          normalColor: '#333',
-          primaryColor: '#E01F3D',
-          logoUrl: '//fuss10.elemecdn.com/d/a4/7b4fc18cd1ae450f4da0beb98b56dsvg.svg',
-          logoHref: '/',
-          languages: [ 'javascript', 'json', 'bash', 'xml' ],
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0" />
+  <title>./docs</title>
+  <link rel="stylesheet" href="https://unpkg.com/docute@3/dist/docute.css">
+</head>
+<body>
+  <div id="app"></div>
+  <script src="https://unpkg.com/docute@3/dist/docute.js"></script>
+  <script>
+    docute.init({
+      icons: [{
+        icon: 'github',
+        label: 'Contribute on GitHub',
+        link: '//github.com/eleme/baas-jssdk'
+      }],
+      nav: [
+        { title: '主页', path: '/' },
+        {
+          title: 'API',
+          type: 'dropdown',
           items: [
-            { text: 'INTRO', href: '/docs/intro/' }
+            { title: 'Baas', path: '/docs/api/' },
+            { title: 'Baas.Object', path: '/docs/api/object/' },
+            { title: 'Baas.Query', path: '/docs/api/query/' },
           ]
-        });
-      });
-    </script>
-  </head>
-  <body></body>
+        }
+      ]
+    });
+  </script>
+</body>
 </html>
