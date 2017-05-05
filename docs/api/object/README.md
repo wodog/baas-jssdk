@@ -23,7 +23,7 @@ new Baas.Object({
 
 **返回**
 
-`Type: Object`
+`Type: Baas.Object`
 
 ## set
 
@@ -37,7 +37,23 @@ todo.set('done', true);
 
 **返回**
 
-`void`
+`Type: Baas.Object`
+
+## get
+
+根据 key 获取 Object 对象数据集上的值。
+
+```js
+const todo = new Baas.Object({ tableName: 'todo' });
+todo._id = '59001b05a92424303cb240a9';
+todo.set('done', true);
+
+todo.get('done') // true
+```
+
+**返回**
+
+`Type: Any`
 
 ## fetch
 
@@ -77,3 +93,32 @@ const todo = new Baas.Object({ tableName: 'todo' });
 todo._id = '59001b05a92424303cb240a9';
 todo.destroy().then(() => alert('删除数据成功！'));
 ```
+
+## clone
+
+复制一个 Baas.Object 实例对象的数据
+
+```js
+const todo = new Baas.Object({ tableName: 'todo' });
+todo._id = '59001b05a92424303cb240a9';
+todo.set('done', true);
+
+const newTodo = todo.clone();
+newTodo.toJSON(); // { "done": true }
+```
+
+<p class="tip">clone 出来的对象不会继承原对象的 _id 属性</p>
+
+## toJSON
+
+返回一个 Baas.Object 的 JSON 数据
+
+```js
+const todo = new Baas.Object({ tableName: 'todo' });
+todo._id = '59001b05a92424303cb240a9';
+todo
+  .set('name', 'use BaaS')
+  .set('done', true);
+todo.toJSON(); // { "_id": "59001b05a92424303cb240a9", "name": 'use BaaS', "done": true }
+```
+
