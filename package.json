@@ -8,7 +8,7 @@
   },
   "scripts": {
     "build:browser": "mkdir -p ./dist && browserify ./index.js -o ./dist/baas-jssdk.js --standalone Baas",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "./node_modules/.bin/ava ./test/index.js -w"
   },
   "repository": {
     "type": "git",

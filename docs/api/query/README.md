@@ -1,6 +1,6 @@
 # Baas.Query
 
-Baas JSSDK 查询对象。
+Baas 查询的构造函数，同时负责生成查询条件（query-builder）和执行查询
 
 ## Constructor
 
@@ -53,9 +53,12 @@ query.find({
 
 ```js
 const query = new Baas.Query('todo');
-query.get('59001b05a92424303cb240a9').then(() => alert('数据获取成功'));
+query.get('59001b05a92424303cb240a9').then(() => {
+  alert('数据获取成功');
+});
 ```
 
 **返回**
 
 `Type: Object`
+

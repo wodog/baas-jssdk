@@ -9,6 +9,7 @@ JavaScript SDK for BaaS
 ```js
 // through npm
 npm i baas-jssdk -S
+
 // or yarn
 yarn add baas-jssdk
 ```
@@ -35,6 +36,13 @@ const todo = new Baas.Object('todo');
 
 todo.set('name', 'Hello World');
 todo.set('done', false);
-todo.save().then(() => alert('Voila!'));
+todo.save().then(() => {
+  alert('Voila!');
+});
 ```
+
+## Changelog
+
+- 2017.5.5 baas-jssdk releases 0.0.1! 🐣
+
 
