@@ -62,3 +62,19 @@ query.get('59001b05a92424303cb240a9').then(() => {
 
 `Type: Object`
 
+## count
+
+获取 Table 下所有记录数量
+
+```js
+const query = new Baas.Query('todo');
+query.count().then(() => {
+  alert('记录数量获取成功');
+});
+```
+
+**返回**
+
+`Type: Number`
+
+
