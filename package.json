@@ -8,7 +8,7 @@
   },
   "scripts": {
     "build:browser": "mkdir -p ./dist && browserify ./index.js -o ./dist/baas-jssdk.js --standalone Baas && uglifyjs ./dist/baas-jssdk.js -o ./dist/baas-jssdk.min.js",
-    "test": "./node_modules/.bin/ava ./test/index.js -w"
+    "test": "./node_modules/.bin/ava ./test/index.js"
   },
   "repository": {
     "type": "git",
