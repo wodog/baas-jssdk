@@ -107,7 +107,7 @@ const newTodo = todo.clone();
 newTodo.toJSON(); // { "done": true }
 ```
 
-<p class="tip">clone 出来的对象不会继承原对象的 _id 属性</p>
+<p class="tip">clone 出来的对象不会继承原对象的 `_id` 属性</p>
 
 ## toJSON
 
