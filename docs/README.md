@@ -32,10 +32,17 @@ import Baas from 'baas-jssdk';
 // 为 SDK 指定一个目标 App
 Baas.init({ appId: '59001b05a92424303cb240a9' });
 // 在 `todo` 表中创建一条记录
-const todo = new Baas.Object('todo');
+const todo = new Baas.Object({ tableName: 'todo' });
 
 todo.set('name', 'Hello World');
 todo.set('done', false);
+
+// 或者
+// const todo = new Baas.Object({
+//   tableName: 'todo',
+//   data: { name: 'Hello World', done: false }
+// });
+
 todo.save().then(() => {
   alert('Voila!');
 });
