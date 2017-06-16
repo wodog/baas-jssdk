@@ -122,3 +122,14 @@ todo
 todo.toJSON(); // { "_id": "59001b05a92424303cb240a9", "name": 'use BaaS', "done": true }
 ```
 
+## inc
+
+为某个 key 增加或减少一定的值，常用在点赞、UV/PV 访问量、计数器等场景，这个操作是原子级的，避免多点并发请求同一资源带来的问题。
+
+```js
+const todo = new Baas.Object({ tableName: 'todo' });
+todo._id = '59001b05a92424303cb240a9';
+todo.inc('likes', -1);
+todo.save();
+```
+

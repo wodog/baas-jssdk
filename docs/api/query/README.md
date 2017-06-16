@@ -115,3 +115,12 @@ const query = new Baas.Query('todo');
 query.skip(10);
 ```
 
+## sort
+
+设置查询的排序
+
+```js
+const query = new Baas.Query('todo');
+query.sort('-createdAt');
+```
+
