@@ -18,7 +18,10 @@ BaaS SDK 全局对象
 ```js
 Baas.init({
   env: 'prod',
-  appId: '58b6741a918d885ae123a948'
+  appId: '58b6741a918d885ae123a948',
+  headers: {
+    Cookie: 'COFFEE_TOKEN=test-coffee-token-for-baas'
+  }
 })
 ```
 
