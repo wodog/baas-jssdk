@@ -14,6 +14,7 @@ BaaS SDK 全局对象
 | ---- | ---- | ------ |
 | env | string | 只能使用 alpha/beta/prod，默认是 prod |
 | appId | string | 指定操作的 app |
+| headers | object | 通用 header |
 
 ```js
 Baas.init({
