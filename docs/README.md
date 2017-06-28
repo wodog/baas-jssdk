@@ -14,12 +14,10 @@ npm i baas-jssdk -S
 yarn add baas-jssdk
 ```
 
-<p class="tip">JSSDK 同时支持浏览器和服务器环境</p>
-
 ### CDN
 
 ```html
-<script src="//unpkg.com/baas-jssdk/dist/baas-jssdk.min.js"></script>
+<script src="//github.elemecdn.com/eleme/baas-jssdk/0.0.17/dist/baas-jssdk.min.js"></script>
 ```
 
 ## Hello World
