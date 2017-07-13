@@ -1,6 +1,6 @@
 {
   "name": "baas-jssdk",
-  "version": "0.0.18",
+  "version": "0.0.19",
   "description": "baas jssdk",
   "main": "index.js",
   "directories": {
